@@ -1,4 +1,4 @@
-package configs;
+package pageObject;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -8,7 +8,7 @@ import  driverHelper.*;
 
 import driverHelper.BasePage;
 
-public class ConfigurationPage extends BasePage {
+public class POConfiguration extends BasePage {
 	
 	private final static By SettingButton = By.id("configBtn");
 	private final static By HostnameField = By.id("input_configHost");

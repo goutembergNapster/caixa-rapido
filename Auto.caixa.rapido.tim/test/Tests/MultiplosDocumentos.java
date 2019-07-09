@@ -14,9 +14,9 @@ public class MultiplosDocumentos extends BaseTest {
 	// private FormOfPaymentPage formOfPaymentPage = new FormOfPaymentPage();
 	// private CartPage cartPage = new CartPage();
 
-	private POClientDataPage clienteDataPage = new POClientDataPage();
+	private POClientData clienteDataPage = new POClientData();
 	private POIdentificationByDocuments identificationPage = new POIdentificationByDocuments();
-	private POClientIdentificationPage clienteIdentification = new POClientIdentificationPage();
+	private POClientIdentification clienteIdentification = new POClientIdentification();
 	private ClientConfig clientConfig = ClientConfigFactory.getClientConfig(DriverFactory.clientName);
 
 	/*

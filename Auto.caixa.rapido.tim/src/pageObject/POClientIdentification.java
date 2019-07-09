@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 
 import driverHelper.BasePage;
 
-public class POClientIdentificationPage extends BasePage {
+public class POClientIdentification extends BasePage {
 	
 	private final static By SelectClientButton = By.xpath("//*[@class='button ng-binding button-theme']");
 	private final static By ClientNameFilteredLabel = By.xpath("//*[@class='popup-body']//span");

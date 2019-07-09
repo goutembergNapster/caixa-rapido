@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 
 import driverHelper.BasePage;
 
-public class POFormOfPaymentPage extends BasePage {
+public class POFormOfPayment extends BasePage {
 	
 	private final static By TotalCartMethodPaymentScreen = By.id("campo-moeda");
 

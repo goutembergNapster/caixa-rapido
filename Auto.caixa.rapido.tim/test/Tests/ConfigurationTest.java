@@ -4,6 +4,7 @@ import static org.junit.Assert.assertEquals;
 import org.junit.Before;
 import org.junit.Test;
 import configs.*;
+import constantes.MensagensDeAcesso;
 import driverHelper.*;
 import pageObject.*;
 
@@ -11,8 +12,8 @@ import pageObject.*;
 
 public class ConfigurationTest extends BasePage {
 	
-	private ConfigurationPage configPage = new ConfigurationPage();
-	private POMenuPage pomenuPage = new POMenuPage();
+	private POConfiguration configPage = new POConfiguration();
+	private POMenu pomenuPage = new POMenu();
 	private ClientConfig clientConfig = ClientConfigFactory.getClientConfig(DriverFactory.clientName);
 
 	@Before
@@ -30,7 +31,7 @@ public class ConfigurationTest extends BasePage {
 		configPage.clickOkPopUp();
 		configPage.clickFechar();
 
-		assertEquals(DadosDeAcesso.TEXT_VERIFY_LOGOUT, pomenuPage.getMessage_VefifyLogout());
+		assertEquals(MensagensDeAcesso.TEXT_VERIFY_LOGOUT, pomenuPage.getMessage_VefifyLogout());
 	}
 
 }

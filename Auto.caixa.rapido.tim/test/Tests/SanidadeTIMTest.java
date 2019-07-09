@@ -10,11 +10,11 @@ import driverHelper.*;
 
 public class SanidadeTIMTest extends BasePage {
 	
-	private POMenuPage menuPage = new POMenuPage();
-	private POProductQueryPage productQueryPage = new POProductQueryPage();
-	private POCartPage cartPage = new POCartPage();
-	private POFormOfPaymentPage formOfPaymentPage = new POFormOfPaymentPage();
-	private POSalePage salePage = new POSalePage();
+	private POMenu menuPage = new POMenu();
+	private POProductQuery productQueryPage = new POProductQuery();
+	private POCart cartPage = new POCart();
+	private POFormOfPayment formOfPaymentPage = new POFormOfPayment();
+	private POSale salePage = new POSale();
 	
 	private ClientConfig clientConfig = ClientConfigFactory.getClientConfig(DriverFactory.clientName);
 

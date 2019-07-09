@@ -6,7 +6,7 @@ import driverHelper.*;
 
 import driverHelper.BasePage;
 
-public class POSanidadePage extends BasePage {
+public class POSanidade extends BasePage {
 	
 	@SuppressWarnings("unused")
 	private WebDriverWait wait = new WebDriverWait(DriverFactory.getDriver(), 30);

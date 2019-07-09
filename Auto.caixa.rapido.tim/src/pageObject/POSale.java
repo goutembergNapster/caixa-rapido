@@ -8,7 +8,7 @@ import driverHelper.*;
 
 import driverHelper.BasePage;
 
-public class POSalePage extends BasePage {
+public class POSale extends BasePage {
 	
 	private final static By SplashLoading = By.xpath("//[@class='loading']");
 

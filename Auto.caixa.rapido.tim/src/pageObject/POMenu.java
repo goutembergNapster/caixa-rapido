@@ -7,7 +7,7 @@ import org.openqa.selenium.By;
 
 import driverHelper.BasePage;
 
-public class POMenuPage extends BasePage {
+public class POMenu extends BasePage {
 	
 	private final static By MenuSanduicheButton = By.id("button_NavbarIcon");
 	private final static By ClientIdentificationMenu = By.id("ionItem_homeMenuOperation4");

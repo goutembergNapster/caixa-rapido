@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 
 import driverHelper.BasePage;
 
-public class POClientDataPage extends BasePage {
+public class POClientData extends BasePage {
 	
 	private final static By SelectCloseButton = By.xpath("//*[@class='button button-clear button-theme button-primary']");
 	private final static By Cpf  = By.xpath("//*/span[contains(.,'CPF: ')]");
@@ -55,14 +55,14 @@ public class POClientDataPage extends BasePage {
 	
 	public String clearLabelCPF() {
         
-	    POClientDataPage clientDataPage = new POClientDataPage();
+	    POClientData clientDataPage = new POClientData();
 		String cpf = clientDataPage.getCpfClient();
 		String replaceCPF = cpf.replaceAll("CPF: ", "");
  		return replaceCPF; 		
 		}
 
 	public String clearLabelCNPJ() {
-		POClientDataPage clientDataPage = new POClientDataPage();
+		POClientData clientDataPage = new POClientData();
 		String cnpj = clientDataPage.getCNPJClient();
 		String replaceCNPJ = cnpj.replaceAll("CNPJ: ", "");
 		return replaceCNPJ;

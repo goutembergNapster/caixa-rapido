@@ -9,9 +9,9 @@ import configs.*;
 
 public class IdentificadorUnico extends BaseTest {
 	
-	private POMenuPage menuPage = new POMenuPage();
-	private POProductQueryPage productQueryPage = new POProductQueryPage();
-	private POCartPage cartPage = new POCartPage();
+	private POMenu menuPage = new POMenu();
+	private POProductQuery productQueryPage = new POProductQuery();
+	private POCart cartPage = new POCart();
 	
 	
 	private ClientConfig clientConfig = ClientConfigFactory.getClientConfig(DriverFactory.clientName);

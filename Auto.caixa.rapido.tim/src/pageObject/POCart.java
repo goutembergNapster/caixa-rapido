@@ -8,7 +8,7 @@ import driverHelper.*;
 
 import driverHelper.BasePage;
 
-public class POCartPage extends BasePage {
+public class POCart extends BasePage {
 	
 	private final static By SplashLoad = By.xpath("//*[@class='loading']");
 	private final static By IdentifyClientLabel = By.xpath("//*[@class='list-item-dosis']");

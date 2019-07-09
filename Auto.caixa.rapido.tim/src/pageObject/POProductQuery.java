@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 
 import driverHelper.BasePage;
 
-public class POProductQueryPage extends BasePage {
+public class POProductQuery extends BasePage {
 	
 
 	private final static By CodeProductField = By.id("input_productSearchAutomationCode");

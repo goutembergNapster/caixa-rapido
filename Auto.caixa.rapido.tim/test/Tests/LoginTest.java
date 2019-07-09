@@ -8,14 +8,16 @@ import org.junit.Before;
 import org.junit.Test;
 
 import configs.*;
+import constantes.MensagensDeAcesso;
 import driverHelper.*;
 import pageObject.*;
+import util.DadosDeAcesso;
 
 public class LoginTest {
 	
 
-	private POLoginPage loginPage = new POLoginPage();
-	private POMenuPage menuPage = new POMenuPage();
+	private POLogin loginPage = new POLogin();
+	private POMenu menuPage = new POMenu();
 	private ClientConfig clientConfig = ClientConfigFactory.getClientConfig(DriverFactory.clientName);
 
 	@Before
@@ -61,7 +63,7 @@ public class LoginTest {
 		loginPage.hideKeyboard();
 		loginPage.logar();
 		menuPage.clickLogout();
-		assertEquals(DadosDeAcesso.TEXT_VERIFY_LOGOUT, menuPage.getMessage_VefifyLogout());
+		assertEquals(MensagensDeAcesso.TEXT_VERIFY_LOGOUT, menuPage.getMessage_VefifyLogout());
 	}
 
 	@Test
@@ -71,7 +73,7 @@ public class LoginTest {
 		loginPage.hideKeyboard();
 		loginPage.logar();
 
-		assertEquals(DadosDeAcesso.MESSAGE_LOGINWITH_USERNAMEWRONG, loginPage.validateMessageWithError());
+		assertEquals(MensagensDeAcesso.MESSAGE_LOGINWITH_USERNAMEWRONG, loginPage.validateMessageWithError());
 		loginPage.clickOkPopupError();
 	}
 
@@ -82,7 +84,7 @@ public class LoginTest {
 		loginPage.hideKeyboard();
 		loginPage.logar();
 
-		assertEquals(DadosDeAcesso.MESSAGE_LOGINWITH_PASSWORDWRONG, loginPage.validateMessageWithError());
+		assertEquals(MensagensDeAcesso.MESSAGE_LOGINWITH_PASSWORDWRONG, loginPage.validateMessageWithError());
 		loginPage.clickOkPopupError();
 	}
 
