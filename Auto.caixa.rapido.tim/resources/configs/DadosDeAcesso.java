@@ -1,6 +1,6 @@
 package configs;
 
-public class LoginTestUtils {
+public class DadosDeAcesso {
 	
 	/*** LOGIN TEST MESSAGES ***/
 	public static final String USERNAMEWRONG = "230";

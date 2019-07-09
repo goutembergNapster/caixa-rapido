@@ -2,7 +2,7 @@ package driverHelper;
 
 import static driverHelper.DriverFactory.getDriver;
 
-import java.io.*;
+//import java.io.*;
 import java.util.List;
 
 import org.openqa.selenium.By;
@@ -20,7 +20,7 @@ public class BasePage {
 			e.printStackTrace();
 		}
 	}
-
+	
 	public void writeInput(By by, String text) {
 		getDriver().findElement(by).sendKeys(text);
 	}

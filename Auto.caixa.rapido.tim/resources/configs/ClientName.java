@@ -1,4 +1,4 @@
-package enums;
+package configs  ;
 
 public enum ClientName {
 

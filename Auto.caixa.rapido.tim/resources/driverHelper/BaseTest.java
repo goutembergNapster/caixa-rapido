@@ -1,22 +1,20 @@
 package driverHelper;
 
+
 import org.junit.BeforeClass;
-
-import configs.ClientConfig;
 import configs.ClientConfigFactory;
-import pageObject.LoginPage;
-
+import pageObject.POLoginPage;
 public class BaseTest {
 
-	private static LoginPage loginPage = new LoginPage();
+	private static POLoginPage loginPage = new POLoginPage();
 
 	@BeforeClass
 	public static void setUp() throws InterruptedException {
 		DriverFactory.setContextoWebView();
 
 		loginPage.setUsername(ClientConfigFactory.getClientConfig(DriverFactory.clientName).getUsername());
-		loginPage.setPassword(ClientConfigFactory.getClientConfig(DriverFactory.clientName).getPassword());
-
+		loginPage.setUsername(ClientConfigFactory.getClientConfig(DriverFactory.clientName).getPassword());
+		
 		loginPage.hideKeyboard();
 		loginPage.logar();
 	}

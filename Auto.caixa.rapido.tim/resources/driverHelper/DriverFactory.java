@@ -7,8 +7,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.remote.DesiredCapabilities;
 
-import enums.ClientName;
-
+import configs.ClientName;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
 

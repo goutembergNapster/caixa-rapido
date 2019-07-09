@@ -7,11 +7,11 @@ import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import configs.LoginTestUtils;
+import configs.DadosDeAcesso;
 import driverHelper.BasePage;
 import driverHelper.DriverFactory;
 
-public class LoginPage extends BasePage {
+public class POLoginPage extends BasePage {
 	
 	private final static By UsernameField = By.id("username");
 	private final static By PasswordField = By.id("password");
@@ -37,7 +37,7 @@ public class LoginPage extends BasePage {
 	public boolean validateLogin() {
 		new WebDriverWait(getDriver(), 60).until(ExpectedConditions.presenceOfElementLocated(ApplicationTitle));
 
-		return getText(ApplicationTitle).equals(LoginTestUtils.APPLICATION_TITLE);
+		return getText(ApplicationTitle).equals(DadosDeAcesso.APPLICATION_TITLE);
 	}
 
 	public String validateMessageWithError() {
