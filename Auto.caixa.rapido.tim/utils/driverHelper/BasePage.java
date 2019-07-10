@@ -4,7 +4,7 @@ import static driverHelper.DriverFactory.getDriver;
 
 //import java.io.*;
 import java.util.List;
-
+import util.log.Log;
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -12,6 +12,9 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import io.appium.java_client.MobileElement;
 
 public class BasePage {
+	public static Boolean resultado = false;
+	public static String PageDescription;
+	public static String ElementDescription;
 	
 	public void waiting(long time) {
 		try {
@@ -21,8 +24,9 @@ public class BasePage {
 		}
 	}
 	
-	public void writeInput(By by, String text) {
+	public static void writeInput(By by, String text) {
 		getDriver().findElement(by).sendKeys(text);
+		Log.PassoAPasso("Input value "+text, ElementDescription);
 	}
 
 	public void writeInputWithClear(By by, String text) {
@@ -31,9 +35,10 @@ public class BasePage {
 		input.sendKeys(text);
 	}
 
-	public void clickElement(By by) {
+	public static void clickElement(By by) {
 		new WebDriverWait(getDriver(), 60).until(ExpectedConditions.presenceOfElementLocated(by));
 		getDriver().findElement(by).click();
+		Log.PassoAPasso("click", ElementDescription);
 	}
 
 	public void clickElementByIndex(By by, int index) {

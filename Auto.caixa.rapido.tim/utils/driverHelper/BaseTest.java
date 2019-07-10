@@ -13,7 +13,7 @@ public class BaseTest {
 		DriverFactory.setContextoWebView();
 
 		loginPage.setUsername(ClientConfigFactory.getClientConfig(DriverFactory.clientName).getUsername());
-		loginPage.setUsername(ClientConfigFactory.getClientConfig(DriverFactory.clientName).getPassword());
+		loginPage.setPassword(ClientConfigFactory.getClientConfig(DriverFactory.clientName).getPassword());
 		
 		loginPage.hideKeyboard();
 		loginPage.logar();

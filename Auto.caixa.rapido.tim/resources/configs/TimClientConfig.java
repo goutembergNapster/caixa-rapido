@@ -1,13 +1,13 @@
 package configs;
 
-public class TimClientConfig implements configs.ClientConfig {
+public class TimClientConfig implements ClientConfig {
 
 	public String getUsername() {
-		return "t1917";
+		return "g242424";
 	}
 
 	public String getPassword() {
-		return "aA2@";
+		return "123456";
 	}
 
 	public String getHostname() {

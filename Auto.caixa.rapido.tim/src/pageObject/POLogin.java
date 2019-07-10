@@ -7,9 +7,9 @@ import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import constantes.MensagensDeAcesso;
 import driverHelper.BasePage;
 import driverHelper.DriverFactory;
+import mensagens.MensagensDeAcesso;
 
 public class POLogin extends BasePage {
 	

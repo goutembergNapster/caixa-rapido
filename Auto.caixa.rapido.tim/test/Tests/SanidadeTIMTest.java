@@ -5,8 +5,8 @@ import org.junit.Assert;
 import org.junit.Test;
 import pageObject.*;
 import configs.*;
-import constantes.Mensagens;
 import driverHelper.*;
+import mensagens.Mensagens;
 
 public class SanidadeTIMTest extends BasePage {
 	

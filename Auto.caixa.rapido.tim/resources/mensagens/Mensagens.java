@@ -1,4 +1,4 @@
-package constantes;
+package mensagens;
 
 public class Mensagens {
 	

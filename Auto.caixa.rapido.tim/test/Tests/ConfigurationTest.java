@@ -4,8 +4,8 @@ import static org.junit.Assert.assertEquals;
 import org.junit.Before;
 import org.junit.Test;
 import configs.*;
-import constantes.MensagensDeAcesso;
 import driverHelper.*;
+import mensagens.MensagensDeAcesso;
 import pageObject.*;
 
 
