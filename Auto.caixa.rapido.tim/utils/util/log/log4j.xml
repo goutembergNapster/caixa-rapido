@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/" debug="false">
+
+    <appender name="txtLog" class="org.apache.log4j.FileAppender">
+        <param name="Threshold" value="INFO"/>
+        <param name="File" value=".//resultados/executionLog/logfile.log"/>
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d %-5p [%c{1}] %m %n"/>
+        </layout>
+    </appender>
+    <appender name="htmlLog" class="org.apache.log4j.FileAppender">
+        <param name="Threshold" value="INFO"/>
+        <param name="File" value=".//resultados/executionLog/logfile.html"/>
+        <layout class="org.apache.log4j.HTMLLayout">
+            <param name="Title" value="Resultado de Execução de Teste Automático"/>
+            <param name="LocationInfo" value="true"/>
+        </layout>
+    </appender>
+    <appender name="consoleOut" class="org.apache.log4j.ConsoleAppender">
+        <param name="Threshold" value="INFO"/>
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d %-5p [%c{1}] %m %n"/>        </layout>
+    </appender>
+
+    <root>
+        <level value="INFO"/>
+        <appender-ref ref="htmlLog"/>
+        <appender-ref ref="txtLog"/>
+        <appender-ref ref="consoleOut"/>
+    </root>
+
+</log4j:configuration>

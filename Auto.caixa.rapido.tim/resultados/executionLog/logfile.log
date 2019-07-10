@@ -1,0 +1,66 @@
+2019-07-10 16:47:29,938 INFO  [Log] *************************************************************************************************** 
+2019-07-10 16:47:29,943 INFO  [Log] *************************************************************************************************** 
+2019-07-10 16:47:29,943 INFO  [Log]                  searchCodeUnique 
+2019-07-10 16:47:29,943 INFO  [Log] *************************************************************************************************** 
+2019-07-10 16:47:29,944 INFO  [Log] ***************************************************************************************************
+ 
+2019-07-10 16:47:29,944 INFO  [Log] Ambiente da execu√ß√£o: 
+2019-07-10 16:47:29,944 INFO  [Log] Sistema Operacional Android 
+2019-07-10 16:47:29,944 INFO  [Log] Objetivos:  
+2019-07-10 16:47:29,945 INFO  [Log] Este teste tem como objetivo, criar um novo Lead, converter e por fim, criar uma oportunidade adicionando e removendo produtos. 
+2019-07-10 16:47:29,945 INFO  [Log] ___________________________________________________________________________________________________ 
+2019-07-10 16:47:29,945 INFO  [Log] Pr√©-requisitos:  
+2019-07-10 16:47:29,945 INFO  [Log] 1. Ambiente de teste disponÌvel; 
+2019-07-10 16:47:29,946 INFO  [Log] 2. Usu·rio do teste compermiss„o para eecutar o fluxo. 
+2019-07-10 16:47:29,946 INFO  [Log] ___________________________________________________________________________________________________ 
+2019-07-10 16:47:29,946 INFO  [Log] Passos do Teste:  
+2019-07-10 16:47:32,378 INFO  [Log] An action Input value 7455454545451121 executed on Search Field.. 
+2019-07-10 16:47:33,072 INFO  [Log] An action click executed on Search product Button.. 
+2019-07-10 16:47:35,055 INFO  [Log] An action click executed on PopUp Confirm Button.. 
+2019-07-10 16:47:35,055 INFO  [Log] Valida√ß√£o: A valida√ß√£o teste de log do teste searchCodeUnique obteve SUCESSO. 
+2019-07-10 16:47:36,052 INFO  [Log] ___________________________________________________________________________________________________ 
+2019-07-10 16:47:36,052 INFO  [Log] Resultado Esperado:  
+2019-07-10 16:47:36,052 INFO  [Log] 1. Lead criado e disponÌvel para utilizaÁ„o; 
+2019-07-10 16:47:36,052 INFO  [Log] 2. Lead convertido; 
+2019-07-10 16:47:36,052 INFO  [Log] 3. Oportunidade criada com os produtos especÌficos do teste. 
+2019-07-10 16:47:36,053 INFO  [Log] 
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 
+2019-07-10 16:47:36,053 INFO  [Log] Valida√ß√µes: 
+2019-07-10 16:47:36,053 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXXX                -E---N---D-                XXXXXXXXXXXXXXXXXXXXXXXXXX 
+2019-07-10 16:47:36,053 INFO  [Log] X 
+2019-07-10 16:47:36,053 INFO  [Log] Resultado do teste: REPROVADO 
+2019-07-10 16:47:36,054 INFO  [Log] X 
+2019-07-10 16:47:36,054 INFO  [Log] X 
+2019-07-10 16:56:49,030 INFO  [Log] *************************************************************************************************** 
+2019-07-10 16:56:49,035 INFO  [Log] *************************************************************************************************** 
+2019-07-10 16:56:49,035 INFO  [Log]                  searchCodeUnique 
+2019-07-10 16:56:49,035 INFO  [Log] *************************************************************************************************** 
+2019-07-10 16:56:49,036 INFO  [Log] ***************************************************************************************************
+ 
+2019-07-10 16:56:49,036 INFO  [Log] Ambiente da execu√ß√£o: 
+2019-07-10 16:56:49,036 INFO  [Log] Sistema Operacional Android 
+2019-07-10 16:56:49,037 INFO  [Log] Objetivos:  
+2019-07-10 16:56:49,037 INFO  [Log] Este teste tem como objetivo, criar um novo Lead, converter e por fim, criar uma oportunidade adicionando e removendo produtos. 
+2019-07-10 16:56:49,037 INFO  [Log] ___________________________________________________________________________________________________ 
+2019-07-10 16:56:49,037 INFO  [Log] Pr√©-requisitos:  
+2019-07-10 16:56:49,037 INFO  [Log] 1. Ambiente de teste disponÌvel; 
+2019-07-10 16:56:49,038 INFO  [Log] 2. Usu·rio do teste compermiss„o para eecutar o fluxo. 
+2019-07-10 16:56:49,038 INFO  [Log] ___________________________________________________________________________________________________ 
+2019-07-10 16:56:49,038 INFO  [Log] Passos do Teste:  
+2019-07-10 16:56:51,166 INFO  [Log] An action Input value 7455454545451121 executed on Search Field.. 
+2019-07-10 16:56:52,036 INFO  [Log] An action click executed on Search product Button.. 
+2019-07-10 16:56:53,789 INFO  [Log] An action click executed on PopUp Confirm Button.. 
+2019-07-10 16:56:53,790 INFO  [Log] Valida√ß√£o: A valida√ß√£o teste de log do teste searchCodeUnique obteve SUCESSO. 
+2019-07-10 16:56:54,860 INFO  [Log] ___________________________________________________________________________________________________ 
+2019-07-10 16:56:54,860 INFO  [Log] Resultado Esperado:  
+2019-07-10 16:56:54,860 INFO  [Log] 1. Lead criado e disponÌvel para utilizaÁ„o; 
+2019-07-10 16:56:54,860 INFO  [Log] 2. Lead convertido; 
+2019-07-10 16:56:54,860 INFO  [Log] 3. Oportunidade criada com os produtos especÌficos do teste. 
+2019-07-10 16:56:54,861 INFO  [Log] 
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 
+2019-07-10 16:56:54,861 INFO  [Log] Valida√ß√µes: 
+2019-07-10 16:56:54,861 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXXX                -E---N---D-                XXXXXXXXXXXXXXXXXXXXXXXXXX 
+2019-07-10 16:56:54,861 INFO  [Log] X 
+2019-07-10 16:56:54,861 INFO  [Log] Resultado do teste: REPROVADO 
+2019-07-10 16:56:54,861 INFO  [Log] X 
+2019-07-10 16:56:54,862 INFO  [Log] X 
