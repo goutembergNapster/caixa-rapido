@@ -60,13 +60,5 @@ public class POCart2 extends BasePage {
 	public By PagamentoConvenio() {
 		ElementDescription = "PagamentoConvenio"; 
 		return By.xpath("//*[@class='item item-icon-left']//span[.='Convênio']/../..");
-	}
-	
-	
-	
-	
-	
-	
-	
-	
+	}	
 }

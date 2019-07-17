@@ -22,11 +22,12 @@ public class ActManterVenda extends BasePage {
 		writeInput(campocodigpo, produto.getCodigo());
 		writeInput(campodescricao,produto.getDescricao());
 		writeInput(campoidentificador,produto.getIdentificadorUnico());
-		if(isPesquisar) {
+		if(isPesquisar){
 		clickElement(botaoPesquisar);
 		}
 	}
 	public static void AdicionarProdutoAoCarrinho(Produto produto, String referenciaProduto) {
+		
 		clickElement(funcaoSelecionaItemLinhaPorReferencia(referenciaProduto, colunaRetorno));
 		if("mensagemExibidaNoModal".startsWith("mensagemIdentificadorUnico")) {
 		writeInput(campoidentificador, produto.getIdentificadorUnico());
@@ -45,61 +46,14 @@ public class ActManterVenda extends BasePage {
 		
 		RealizarVenda(p, true);
 	}
-	public static void pagarSemCPF() {
-	    clickElement(pocart.BotaoNaoCPF());
-	    }
-	public static void pagarComCPF() {
-	    clickElement(pocart.BotaoSimCPF());
-	    }
-	public String InsereCPF(String cpfCliente) {
-	    wait.until(ExpectedConditions.invisibilityOfElementLocated(pocart.SplashLoad()));
-	    writeInput(pocart.CampoInsereCPFCliente(), cpfCliente);
-	    }
-	public static void FinalizaEmDinheiro() {
-	    clickElement(pocart.PagamentoDinheiro());
-	    }
-	public static void FinalizaConvenio() {
-	    clickElement(pocart.PagamentoConvenio());
-	    }	    
-	public int qtdItensCarrinho(int produtoCarrinho) {
-		return getElements(pocart.ListaProdutoCarrinho());
-		}
-	public String getTotalCarrinho() {
-		return getText(TotalCartLabel);
-		}
-	public static void popUpIdentificadorUnicoInvalido(){
-		clickElement(pocart.IdentificadorUnicoInvalido());
-		}
-	public static void finalizarCarrinho( splashLoad){
-		wait.until(ExpectedConditions.invisibilityOfElementLocated(pocart.SplashLoad());
-		clickElement(pocart.BotaoFinalizarCarrinho());
-		}
-	public void popupCPFInNoteNot() {
-		clickElement(CPFInNoteNotButton);
-		}
-	public void popupCPFInNoteYes() {
-		clickElement(CPFInNoteYesButton);
-		}
-	public boolean isHandsPresent() {
-		return isPresentElement(HandsAgreementIcon);
-		}
-	public void identifyClientByCPF(String cpf) {
-		wait.until(ExpectedConditions.invisibilityOfElementLocated(SplashLoad));
 
-		clickElement(IdentifyClientLabel);
-		clickElement(CPFIdentificationButton);
-		writeInput(CPFClientField, cpf);
 
-		wait.until(ExpectedConditions.presenceOfElementLocated(SearchCPFClientButton));
-
-		getElements(SearchCPFClientButton).get(1).click();
-		}
 		
 
-	}
-	
-	
 }
+	
+	
+
 
 
 

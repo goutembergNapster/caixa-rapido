@@ -6,66 +6,41 @@ import driverHelper.BasePage;
 
 public class POClientData extends BasePage {
 	
-	private final static By SelectCloseButton = By.xpath("//*[@class='button button-clear button-theme button-primary']");
-	private final static By Cpf  = By.xpath("//*/span[contains(.,'CPF: ')]");
-	private final static By ClientInformation  = By.xpath("//*[@class='ng-binding']");
-	private final static By NameClient = By.xpath("//*[@class='ng-binding']");
-	private final static By CodeClient = By.xpath("//*[@class='ng-binding']");
-	private final static By TelephoneClient = By.xpath("//*[@class='ng-binding']");
+    private final static By TelephoneClient = By.xpath("//*[@class='ng-binding']");
 	private final static By EmailClient = By.xpath("//*[@ng-pristine ng-untouched ng-valid ng-empty ng-valid-email ng-valid-required']");
-	private final static By BtnCancelClient = By.xpath("//*[@class='button button_font_dosis button-block button-stable ng-binding']");
-	private final static By BtnSelectClient = By.xpath("//*[@class='button button_font_dosis button-block button-theme ng-binding']");
 	
-	
-	
-	public void BtnClose() {
-		clickElement(SelectCloseButton);
+	public By botaoFechar () {
+		ElementDescription = "Botão Fechar";
+		return By.xpath("//*[@class='button button-clear button-theme button-primary']");
 	}
-	
-	public void BtnCancelClient() {
-		clickElement(BtnCancelClient);
+	public By campoCPF() {
+		ElementDescription = "CampoCPF";
+		return By.xpath("//*/span[contains(.,'CPF: ')]");
 	}
-	
-	public void BtnSelectClient() {
-		clickElement(BtnSelectClient);
+	public By informacaoCliente() {
+		ElementDescription = " Campo Informação do Cliente";
+		return By.xpath("//*[@class='ng-binding']"); 
 	}
-	public String getTelephoneClient() {
-		return getText(TelephoneClient);
+	public By nomeDoCliente() {
+		ElementDescription = "Nome do Cliente";
+		return By.xpath("//*[@class='ng-binding']"); 
 	}
-	
+	public By codigoDoCliente() {
+		ElementDescription = "Codigo do Cliente";
+		return By.xpath("//*[@class='ng-binding']"); 
+	}	
+	public By botaoCancelarCliente() {
+		ElementDescription = "Botão Cancelar Cliente";
+		return By.xpath("//*[@class='button button_font_dosis button-block button-stable ng-binding']");
+	}
+	public By botaoSelecionarCliente() {
+		ElementDescription = "Botão Selecionar Cliente";
+		return By.xpath("//*[@class='button button_font_dosis button-block button-theme ng-binding']");
+	}
+	public void setTelephoneClient(String telefone) {
+		writeInput(TelephoneClient, telefone);
+	}
 	public void setEmailClient(String email) {
 		writeInput(EmailClient, email);
 	}
-	public String getNameClient() {
-		return getText(NameClient);
-	}
-	
-	public String getCodeClient () {
-		return getText(CodeClient);
-		
-	}
-	
-	public String getCpfClient() {
-		return getText(Cpf);
-		}
-	
-	public String getCNPJClient() {
-		return getElements(ClientInformation).get(1).getText()	;
-		}
-	
-	public String clearLabelCPF() {
-        
-	    POClientData clientDataPage = new POClientData();
-		String cpf = clientDataPage.getCpfClient();
-		String replaceCPF = cpf.replaceAll("CPF: ", "");
- 		return replaceCPF; 		
-		}
-
-	public String clearLabelCNPJ() {
-		POClientData clientDataPage = new POClientData();
-		String cnpj = clientDataPage.getCNPJClient();
-		String replaceCNPJ = cnpj.replaceAll("CNPJ: ", "");
-		return replaceCNPJ;
-		}
-
 }
