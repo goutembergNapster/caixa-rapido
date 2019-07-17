@@ -25,8 +25,10 @@ public class BasePage {
 	}
 	
 	public static void writeInput(By by, String text) {
-		getDriver().findElement(by).sendKeys(text);
-		Log.PassoAPasso("Input value "+text, ElementDescription);
+		if(text != null) {
+			getDriver().findElement(by).sendKeys(text);
+			Log.PassoAPasso("Input value "+text, ElementDescription);
+		}
 	}
 
 	public void writeInputWithClear(By by, String text) {

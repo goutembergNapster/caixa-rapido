@@ -6,56 +6,46 @@ import driverHelper.BasePage;
 
 public class POIdentificationByDocuments extends BasePage {
 	
-	private final static By IdentificationByCPF = By.id("input_TabIdentificationCPF");
-	private final static By IdentificationByCNPJ = By.id("input_TabIdentificationCNPJ");
-	private final static By IdentificationByRNE = By.id("input_TabIdentificationRNE");
-	private final static By IdentificationByPassport = By.id("input_TabIdentificationPASSPORT");
-	
-	private final static By SearchCPF = By.xpath("//*[@class='tab-title ng-binding']");
-	private final static By SearchCNPJ = By.xpath("//*[@class='tab-title ng-binding']");
-	private final static By SearchPassaport = By.xpath("//*[@class='tab-title ng-binding']");
-	private final static By SearchRNE = By.xpath("//*[@class='tab-title ng-binding']");
-	
-	private final static By BtnSearchClient = By.id("button_identificationSearch");
-	
-	
-	public void setClientByCPF(String cpf) {
-		writeInput(IdentificationByCPF, cpf);
-	}
-	
-	public void setClientByCNPJ(String cnpj) {
-		writeInput(IdentificationByCNPJ, cnpj);
-		
-	}
-	
-	public void setClientByRNE(String rne) {
-		writeInput(IdentificationByRNE, rne);
-	}
-	
-	public void setClientByPassport(String passport) {
-		writeInput(IdentificationByPassport, passport);
-	}
-	
-	public void btnSearchClient() {
-		clickElement(BtnSearchClient);
-		waiting(200);
-	}
-	
-	public void labelSearchCPF() {
-		getElements(SearchCPF).get(1).click();;
-	}
-	
-	public void labelSearchCNPJ() {
-		getElements(SearchCNPJ).get(1).click();;
-	}
+	private By input_TabIdentificationPASSPORT;
+	private By input_TabIdentificationCNPJ;
+	private By input_TabIdentificationRNE;
+	private By input_TabIdentificationCPF;
 
-	public void labelSearchRNE() {
-		getElements(SearchRNE).get(3).click();
+	public By BotaoBuscaCliente () {
+	    ElementDescription = "Botao Busca Cliente";
+	    waiting(200);
+		return By.id("button_identificationSearch");
 	}
-	
-	public void labelSearchPassaport() {
-	
-		getElements(SearchPassaport).get(2).click();
+	public void IdentificacaoPorCNPJ() {
+		ElementDescription = "Identificacao Por CNPJ";
+		getElements(input_TabIdentificationCNPJ).get(1).click();
 	}
-
+	public void IdentificationByPassport() {
+		ElementDescription = "Identificacao Por Passaporte";
+		getElements(input_TabIdentificationPASSPORT).get(2).click();
+	}
+	public void IdentificacaoPorRNE () {
+		ElementDescription = "Identificacao Por RNE";
+		getElements(input_TabIdentificationRNE).get(3).click();
+	}
+	public void IdentificacaoPorCPF () {
+		ElementDescription = "Identificacao Por RNE";
+		getElements(input_TabIdentificationCPF).get(3).click();
+	}
+	public By BuscaCPF() {
+		ElementDescription = "Botao busca cliente por CPF";
+		return By.xpath("//*[@class='tab-title ng-binding']");
+	}
+	public By BuscaCNPJ() {
+		ElementDescription = "Botao busca cliente por CNPJ";
+		return By.xpath("//*[@class='tab-title ng-binding']");
+	}
+	public By BuscaPassaporte() {
+		ElementDescription = "Botao busca cliente por Passaporte";
+		return By.xpath("//*[@class='tab-title ng-binding']");
+	}
+	public By BuscaRNE() {
+		ElementDescription = "Botao busca cliente por RNE";
+		return By.xpath("//*[@class='tab-title ng-binding']");
+	}	
 }

@@ -13,14 +13,11 @@ public class POProductQuery extends BasePage {
 	private final static By FowardWithoutApllyDiscount_Button = By.id("button_ContinueWithoutApplyingDiscount");
 	private final static By IncludeDiscount_Button = By.id("button_IncludeDescount");
 	private final static By UniqueIdentifier = By.id("input_productSearchUniqueId");
-	
-	// TODO Sem ID
 	private final static By ListProduct = By.xpath("//*[@class='item-content']");
-	// TODO Sem ID único
-	private final static By AddCartButton = By.xpath("//*[@class='button-icon icon theme']");
-	// TODO Sem ID 
+	private final static By AddCartButton = By.xpath("//*[@class='button-icon icon theme']"); 
 	private final static By UniqueIdentifierInvalid = By.xpath("//*[@class='button ng-binding button-theme'][.='OK']");
 
+	
 	public void setCodigo(String codigo) {
 		writeInput(CodeProductField, codigo);
 	}

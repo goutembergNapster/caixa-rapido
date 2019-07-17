@@ -19,7 +19,6 @@ public class POCart extends BasePage {
 	
 	private final static By TotalCartLabel = By.id("homeH1TotalValue");
 	
-	
 	private final static By UniqueIdentifierInvalid = By.xpath("//*[@class='button ng-binding button-theme'][.='OK']");
 
 	private final static By CPFInNoteNotButton = By.xpath("//*[@class='button ng-binding button-default'][.='Não']");
@@ -70,5 +69,6 @@ public class POCart extends BasePage {
 	public boolean isHandsPresent() {
 		return isPresentElement(HandsAgreementIcon);
 	}
+
 
 }

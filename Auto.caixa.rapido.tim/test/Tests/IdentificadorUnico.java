@@ -17,6 +17,7 @@ public class IdentificadorUnico extends BaseTest {
 	private POMenu menuPage = new POMenu();
 	private POProductQuery productQueryPage = new POProductQuery();
 	private POCart cartPage = new POCart();
+	private TimClientConfig timClienteConfig = new TimClientConfig();
 	
 	
 	private ClientConfig clientConfig = ClientConfigFactory.getClientConfig(DriverFactory.clientName);
@@ -31,50 +32,30 @@ public class IdentificadorUnico extends BaseTest {
 	                      new String[] {"Lead criado e disponível para utilização;", "Lead convertido;", "Oportunidade criada com os produtos específicos do teste."}
 	                      );
 	    }
-		
 		@After
 	    public void PosTeste(){
 	        Log.EncerrarTestCase();
 	    }
-	
 		@Test
 		public void searchCodeUnique() {
-	
-			ActManterProduto.ProductSearch("7455454545451121");
+			ActManterProduto.ProductSearch(timClienteConfig.getUniqueIdentifier());
 			Log.SucessoValidacao("teste de log", "searchCodeUnique");
-			
-			//productQueryPage.setIdentificadorUnico(clientConfig.getUniqueIdentifierInvalid());
-			//productQueryPage.clickPesquisar();
-			//productQueryPage.popupUniqueIdentifierInvalid();
-			
-			
+			Assert.fail();		
 		}
-		/**
 		@Test
-		public void searchCodigoUnique() {
-			
-			menuPage.clickConsultarProdutos();
-				
-			productQueryPage.setIdentificadorUnico(clientConfig.getUniqueIdentifier());
-			productQueryPage.clickPesquisar();
-			productQueryPage.addItemCarrinho();
-			productQueryPage.FowardWithoutApllyDiscount();
-			
-			
-			
-			Assert.assertEquals(clientConfig.getTotalCart_SaleWithCash(), cartPage.getTotalCarrinho());
-			
-			//@Test
-			//public void searchCodeUnique() {
-			//	ActManterProduto.ProductSearch("");
-				
-				//productQueryPage.setIdentificadorUnico(clientConfig.getUniqueIdentifierInvalid());
-				//productQueryPage.clickPesquisar();
-				//productQueryPage.popupUniqueIdentifierInvalid();
-				
-				
-			//}
+		public void searchCodeUniqueInvalid() {
+			ActManterProduto.ProductSearch(timClienteConfig.getUniqueIdentifierInvalid());
+			Log.SucessoValidacao("teste log", "searchCodeUniqueInvalid");
 		}
-		*/
-
+		@Test
+		public void searchDescription() {
+			ActManterProduto.ProductSearch(timClienteConfig.getDescriptionProductSaleWithCash());
+			Log.SucessoValidacao("Test log", "searchDescription");
+			Assert.fail();
+		}
+		@Test
+		public void searchCode() {
+			ActManterProduto.ProductSearch(timClienteConfig.getUniqueIdentifier());
+			Log.SucessoValidacao("Test de Log", "searchCode");	
+		}		
 }
