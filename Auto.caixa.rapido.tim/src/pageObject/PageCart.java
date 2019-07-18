@@ -3,7 +3,7 @@ package pageObject;
 import org.openqa.selenium.By;
 import driverHelper.BasePage;
 
-public class POCart2 extends BasePage {
+public class PageCart extends BasePage {
 	
 	public By HandsAgreementIcon () {
 		ElementDescription = "HandsAgreementIcon";

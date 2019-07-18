@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 
 import driverHelper.BasePage;
 
-public class POIdentificationByDocuments extends BasePage {
+public class PageIdentificationByDocuments extends BasePage {
 	
 	private By input_TabIdentificationPASSPORT;
 	private By input_TabIdentificationCNPJ;

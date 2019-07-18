@@ -2,26 +2,26 @@ package actions;
 
 import driverHelper.BasePage;
 import objetos.Produto;
-import pageObject.POCart;
-import pageObject.POCart2;
-import pageObject.POProductQuery_COPY;
+import pageObject.PageCart;
+import pageObject.PageCart;
+import pageObject.PageProductQuery;
 
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import driverHelper.*;
 
-public class ActManterVenda extends BasePage {
+public class ManterVenda extends BasePage {
 	
-	private static POCart2 pocart = new POCart2();
-	private static POProductQuery_COPY poproductQuery_COPY = new POProductQuery_COPY();
+	private static PageCart pocart = new PageCart();
+	private static PageProductQuery poproductQuery_COPY = new PageProductQuery();
 	
 	public static void ProductSearch(String identificadorUnico) {}
 		
 	private WebDriverWait wait = new WebDriverWait(DriverFactory.getDriver(), 60);
 		
-	public static void ConsultarProduto(Produto produto, boolean isPesquisar) {
-		writeInput(poproductQuery_COPY.CodeProductField(), produto.getCodigo());
+	public void ConsultarProduto(String produto, boolean isPesquisar) {
+		writeInput(poproductQuery_COPY.codeProductField(), produto.getCodigo());
 		writeInput(poproductQuery_COPY.input_productSearchDescription(), produto.getDescricao());
 		writeInput(poproductQuery_COPY.input_productSearchUniqueId(),produto.getIdentificadorUnico());
 		if(isPesquisar){

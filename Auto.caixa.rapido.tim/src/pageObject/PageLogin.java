@@ -11,7 +11,7 @@ import driverHelper.BasePage;
 import driverHelper.DriverFactory;
 import mensagens.MensagensDeAcesso;
 
-public class POLogin extends BasePage {
+public class PageLogin extends BasePage {
 	
 	private final static By UsernameField = By.id("username");
 	private final static By PasswordField = By.id("password");

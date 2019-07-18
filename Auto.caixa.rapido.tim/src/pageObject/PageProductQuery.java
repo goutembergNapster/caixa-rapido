@@ -3,21 +3,21 @@ package pageObject;
 import org.openqa.selenium.By;
 import driverHelper.BasePage;
 
-public class POProductQuery_COPY extends BasePage{
+public class PageProductQuery extends BasePage{
 		
-	public By UniqueIdentifier() {
+	public By uniqueIdentifier() {
 		ElementDescription = "Search Field.";
 		return By.id("input_productSearchUniqueId");
 	}
-	public By SearchProductButton() {
+	public By botaoBuscaProduto() {
 		ElementDescription = "Search product Button.";
 		return By.id("button_productSearch");
 	}
-	public By PopUp() {
+	public By popUp() {
 		ElementDescription = "PopUp Confirm Button.";
 		return By.xpath("//*[@class='button ng-binding button-theme'][.='OK']");
 	}
-	public By CodeProductField() {
+	public By codeProductField() {
 		ElementDescription = "CodeProductField";
 		return By.id("input_productSearchAutomationCode");
 	}
@@ -33,7 +33,7 @@ public class POProductQuery_COPY extends BasePage{
 		ElementDescription = "button_productSearch";
 		return By.id("button_productSearch");
 	}
-	public By FowardWithoutApllyDiscount_Button () {
+	public By fowardWithoutApllyDiscount_Button () {
 		ElementDescription = "FowardWithoutApllyDiscount_Button";
 		return By.id("button_ContinueWithoutApplyingDiscount");
 	}
@@ -45,15 +45,15 @@ public class POProductQuery_COPY extends BasePage{
 		ElementDescription = "input_productSearchUniqueId";
 		return By.id("input_productSearchUniqueId");
 	}
-	public By ListProduct () {
+	public By listProduct () {
 		ElementDescription = "ListProduct";
 		return By.xpath("//*[@class='item-content']");
 	}
-	public By AddCartButton () {
+	public By addCartButton () {
 		ElementDescription = "AddCartButton";
 		return By.xpath("//*[@class='button-icon icon theme']");
 	}
-	public By UniqueIdentifierInvalid () {
+	public By uniqueIdentifierInvalid () {
 		ElementDescription = "UniqueIdentifierInvalid";
 		return By.xpath("//*[@class='button ng-binding button-theme'][.='OK']");
 	}

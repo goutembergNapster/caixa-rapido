@@ -1,11 +1,11 @@
-package Tests;
+package tests;
 
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-import actions.ActManterProduto;
+import actions.ManterProduto;
 import pageObject.*;
 import util.log.Log;
 import driverHelper.*;
@@ -14,9 +14,9 @@ import configs.*;
 
 public class IdentificadorUnico extends BaseTest {
 	
-	private POMenu menuPage = new POMenu();
-	private POProductQuery productQueryPage = new POProductQuery();
-	private POCart cartPage = new POCart();
+	private PageMenu menuPage = new PageMenu();
+	private PageProductQuery productQueryPage = new PageProductQuery();
+	private PageCart cartPage = new PageCart();
 	private TimClientConfig timClienteConfig = new TimClientConfig();
 	
 	
@@ -38,24 +38,24 @@ public class IdentificadorUnico extends BaseTest {
 	    }
 		@Test
 		public void searchCodeUnique() {
-			ActManterProduto.ProductSearch(timClienteConfig.getUniqueIdentifier());
+			ManterProduto.ProductSearch(timClienteConfig.getUniqueIdentifier());
 			Log.SucessoValidacao("teste de log", "searchCodeUnique");
 			Assert.fail();		
 		}
 		@Test
 		public void searchCodeUniqueInvalid() {
-			ActManterProduto.ProductSearch(timClienteConfig.getUniqueIdentifierInvalid());
+			ManterProduto.ProductSearch(timClienteConfig.getUniqueIdentifierInvalid());
 			Log.SucessoValidacao("teste log", "searchCodeUniqueInvalid");
 		}
 		@Test
 		public void searchDescription() {
-			ActManterProduto.ProductSearch(timClienteConfig.getDescriptionProductSaleWithCash());
+			ManterProduto.ProductSearch(timClienteConfig.getDescriptionProductSaleWithCash());
 			Log.SucessoValidacao("Test log", "searchDescription");
 			Assert.fail();
 		}
 		@Test
 		public void searchCode() {
-			ActManterProduto.ProductSearch(timClienteConfig.getUniqueIdentifier());
+			ManterProduto.ProductSearch(timClienteConfig.getUniqueIdentifier());
 			Log.SucessoValidacao("Test de Log", "searchCode");	
 		}		
 }

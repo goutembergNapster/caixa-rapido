@@ -3,10 +3,10 @@ package driverHelper;
 
 import org.junit.BeforeClass;
 import configs.ClientConfigFactory;
-import pageObject.POLogin;
+import pageObject.PageLogin;
 public class BaseTest {
 
-	private static POLogin loginPage = new POLogin();
+	private static PageLogin loginPage = new PageLogin();
 
 	@BeforeClass
 	public static void setUp() throws InterruptedException {

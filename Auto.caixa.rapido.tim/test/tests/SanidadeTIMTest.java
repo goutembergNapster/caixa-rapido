@@ -1,4 +1,4 @@
-package Tests;
+package tests;
 
 import static org.junit.Assert.assertEquals;
 import org.junit.Assert;
@@ -10,11 +10,11 @@ import mensagens.Mensagens;
 
 public class SanidadeTIMTest extends BasePage {
 	
-	private POMenu menuPage = new POMenu();
-	private POProductQuery productQueryPage = new POProductQuery();
-	private POCart cartPage = new POCart();
-	private POFormOfPayment formOfPaymentPage = new POFormOfPayment();
-	private POSale salePage = new POSale();
+	private PageMenu menuPage = new PageMenu();
+	private PageProductQuery productQueryPage = new PageProductQuery();
+	private PageCart cartPage = new PageCart();
+	private PageFormOfPayment formOfPaymentPage = new PageFormOfPayment();
+	private PageSale salePage = new PageSale();
 	
 	private ClientConfig clientConfig = ClientConfigFactory.getClientConfig(DriverFactory.clientName);
 

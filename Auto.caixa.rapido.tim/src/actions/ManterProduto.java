@@ -1,11 +1,11 @@
 package actions;
 
 import driverHelper.BasePage;
-import pageObject.POProductQuery_COPY;
+import pageObject.PageProductQuery;
 
-public class ActManterProduto extends BasePage{
+public class ManterProduto extends BasePage{
 	
-	private static POProductQuery_COPY productQueryPage = new POProductQuery_COPY();
+	private static PageProductQuery productQueryPage = new PageProductQuery();
 	
 	
 	

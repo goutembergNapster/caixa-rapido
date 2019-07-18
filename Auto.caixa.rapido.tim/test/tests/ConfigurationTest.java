@@ -1,4 +1,4 @@
-package Tests;
+package tests;
 
 import static org.junit.Assert.assertEquals;
 import org.junit.Before;
@@ -12,8 +12,8 @@ import pageObject.*;
 
 public class ConfigurationTest extends BasePage {
 	
-	private POConfiguration configPage = new POConfiguration();
-	private POMenu pomenuPage = new POMenu();
+	private PageConfiguration configPage = new PageConfiguration();
+	private PageMenu pomenuPage = new PageMenu();
 	private ClientConfig clientConfig = ClientConfigFactory.getClientConfig(DriverFactory.clientName);
 
 	@Before

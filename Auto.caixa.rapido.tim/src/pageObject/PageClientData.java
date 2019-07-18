@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 
 import driverHelper.BasePage;
 
-public class POClientData extends BasePage {
+public class PageClientData extends BasePage {
 	
     private final static By TelephoneClient = By.xpath("//*[@class='ng-binding']");
 	private final static By EmailClient = By.xpath("//*[@ng-pristine ng-untouched ng-valid ng-empty ng-valid-email ng-valid-required']");

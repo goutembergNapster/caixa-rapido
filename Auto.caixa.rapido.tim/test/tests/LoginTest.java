@@ -1,4 +1,4 @@
-package Tests;
+package tests;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
@@ -16,8 +16,8 @@ import util.DadosDeAcesso;
 public class LoginTest {
 	
 
-	private POLogin loginPage = new POLogin();
-	private POMenu menuPage = new POMenu();
+	private PageLogin loginPage = new PageLogin();
+	private PageMenu menuPage = new PageMenu();
 	private ClientConfig clientConfig = ClientConfigFactory.getClientConfig(DriverFactory.clientName);
 
 	@Before

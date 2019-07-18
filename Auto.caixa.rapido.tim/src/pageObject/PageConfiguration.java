@@ -8,7 +8,7 @@ import  driverHelper.*;
 
 import driverHelper.BasePage;
 
-public class POConfiguration extends BasePage {
+public class PageConfiguration extends BasePage {
 	
 	private final static By SettingButton = By.id("configBtn");
 	private final static By HostnameField = By.id("input_configHost");

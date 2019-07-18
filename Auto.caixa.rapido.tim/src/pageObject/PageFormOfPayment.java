@@ -4,11 +4,11 @@ import org.openqa.selenium.By;
 
 import driverHelper.BasePage;
 
-public class POFormOfPayment extends BasePage {
+public class PageFormOfPayment extends BasePage {
 	
 	private final static By TotalCartMethodPaymentScreen = By.id("campo-moeda");
 
-	// TODO sem ID único
+	// TO DO sem ID único
 	private final static By CashMethodPayment = By.xpath("//*[@class='item item-icon-left']//span[.='Dinheiro']/../..");
 	private final static By AgreementMethodPayment = By.xpath("//*[@class='item item-icon-left']//span[.='Convênio']/../..");
 
