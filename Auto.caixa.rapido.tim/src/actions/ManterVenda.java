@@ -20,7 +20,7 @@ public class ManterVenda extends BasePage {
 		
 	private WebDriverWait wait = new WebDriverWait(DriverFactory.getDriver(), 60);
 		
-	public void ConsultarProduto(String produto, boolean isPesquisar) {
+	public void ConsultarProduto(Produto produto, boolean isPesquisar) {
 		writeInput(poproductQuery_COPY.codeProductField(), produto.getCodigo());
 		writeInput(poproductQuery_COPY.input_productSearchDescription(), produto.getDescricao());
 		writeInput(poproductQuery_COPY.input_productSearchUniqueId(),produto.getIdentificadorUnico());
@@ -38,7 +38,7 @@ public class ManterVenda extends BasePage {
 		
 		
 	public static void RealizarVenda(Produto produto,boolean isPesquisar) {
-		ConsultarProduto(produto, isPesquisar);
+		//ConsultarProduto(produto, isPesquisar);
 		AdicionarProdutoAoCarrinho(produto, produto.getCodigo());
 	}
 	public static void teste() {

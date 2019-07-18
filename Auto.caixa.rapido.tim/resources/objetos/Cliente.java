@@ -9,6 +9,7 @@ public class Cliente {
 	String isIdentificarComCPF;
 	
 	public Cliente(String _nomeCliente, String _CPFCliente, String _CPFFiscal, String _isIdentificarClienteNoPagamento, String _isIdentificarComCPF) {
+	
 	this.nomeCliente = _nomeCliente;
 	this.CPFCliente = _CPFCliente;
 	this.CPFFiscal = _CPFFiscal;
@@ -45,6 +46,4 @@ public class Cliente {
 	public void setIsIdentificarComCPF(String isIdentificarComCPF) {
 		this.isIdentificarComCPF = isIdentificarComCPF;
 	}
-	
-
 }

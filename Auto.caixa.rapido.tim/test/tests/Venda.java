@@ -14,6 +14,6 @@ public class Venda extends BasePage {
 	@Test
 	public void consultarProduto() {
 		
-		actManterVenda.ConsultarProduto(clientConfig.getUniqueIdentifier(), true);
+		
 }
 }

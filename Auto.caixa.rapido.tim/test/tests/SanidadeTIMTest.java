@@ -15,10 +15,10 @@ public class SanidadeTIMTest extends BasePage {
 	private PageCart cartPage = new PageCart();
 	private PageFormOfPayment formOfPaymentPage = new PageFormOfPayment();
 	private PageSale salePage = new PageSale();
-	
-	private ClientConfig clientConfig = ClientConfigFactory.getClientConfig(DriverFactory.clientName);
+}
+	//private ClientConfig clientConfig = ClientConfigFactory.getClientConfig(DriverFactory.clientName);
 
-	@Test
+/*	@Test
 	public void validateSaleWithCash() {
 
 		menuPage.clickConsultarProdutos();
@@ -49,3 +49,4 @@ public class SanidadeTIMTest extends BasePage {
 	}
 
 }
+*/

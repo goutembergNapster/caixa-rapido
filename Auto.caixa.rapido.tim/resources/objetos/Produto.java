@@ -6,9 +6,9 @@ public class Produto {
 	String identificadorUnico;
 	
 	public Produto(String _codigo, 	String _descricao, String _identificadorUnico) {
-		this.codigo = _codigo;
-		this.descricao = _descricao;
-		this.identificadorUnico = _identificadorUnico;
+	this.codigo = _codigo;
+	this.descricao = _descricao;
+	this.identificadorUnico = _identificadorUnico;
 	}
 
 	public String getCodigo() {
@@ -38,8 +38,4 @@ public class Produto {
 	public static Produto PesquisarAtivo() {
 		return new Produto("invalido", "zoado", "cagado");
 	}
-	
-	
-	
-
 }

@@ -32,8 +32,10 @@ public class IdentificadorUnico extends BaseTest {
 	                      new String[] {"Lead criado e disponível para utilização;", "Lead convertido;", "Oportunidade criada com os produtos específicos do teste."}
 	                      );
 	    }
+}
+	    /*
 		@After
-	    public void PosTeste(){
+   public void PosTeste(){
 	        Log.EncerrarTestCase();
 	    }
 		@Test
@@ -44,7 +46,7 @@ public class IdentificadorUnico extends BaseTest {
 		}
 		@Test
 		public void searchCodeUniqueInvalid() {
-			ManterProduto.ProductSearch(timClienteConfig.getUniqueIdentifierInvalid());
+			ManterProduto.(timClienteConfig.getUniqueIdentifierInvalid());
 			Log.SucessoValidacao("teste log", "searchCodeUniqueInvalid");
 		}
 		@Test
@@ -59,3 +61,4 @@ public class IdentificadorUnico extends BaseTest {
 			Log.SucessoValidacao("Test de Log", "searchCode");	
 		}		
 }
+*/
