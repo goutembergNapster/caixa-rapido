@@ -21,13 +21,13 @@ public class PageProductQuery extends BasePage{
 		ElementDescription = "CodeProductField";
 		return By.id("input_productSearchAutomationCode");
 	}
-	public By input_productSearchDescription() {
+	public By buscaProdutoPorDescricao() {
 		ElementDescription = "input_productSearchDescription";
 		return By.id("input_productSearchDescription");
 }
 	public By searchProductButton() {
 		ElementDescription = "searchProductButton";
-		return By.id("searchProductButton");
+		return By.id("button_productSearch");
 	}
 	public By button_productSearch () {
 		ElementDescription = "button_productSearch";
@@ -50,15 +50,24 @@ public class PageProductQuery extends BasePage{
 		return By.xpath("//*[@class='item-content']");
 	}
 	public By addCartButton () {
-		ElementDescription = "AddCartButton";
+		ElementDescription = "AdicionaProdutoCarrinho";
 		return By.xpath("//*[@class='button-icon icon theme']");
 	}
 	public By uniqueIdentifierInvalid () {
 		ElementDescription = "UniqueIdentifierInvalid";
 		return By.xpath("//*[@class='button ng-binding button-theme'][.='OK']");
 	}
-
+	public By seguirParaCarrinho  () {
+		ElementDescription = "UniqueIdentifierInvalid";
+		return By.id("button_ShowCart");
+	}
 }
+
+
+
+
+
+
 
 
 

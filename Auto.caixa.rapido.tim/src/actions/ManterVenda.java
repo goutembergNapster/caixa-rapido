@@ -13,16 +13,15 @@ import driverHelper.*;
 
 public class ManterVenda extends BasePage {
 	
-	private static PageCart pocart = new PageCart();
-	private static PageProductQuery poproductQuery_COPY = new PageProductQuery();
 	
-	public static void ProductSearch(String identificadorUnico) {}
+	private static PageProductQuery poproductQuery_COPY = new PageProductQuery();
+	private static PageCart pageCart = new PageCart();
 		
 	private WebDriverWait wait = new WebDriverWait(DriverFactory.getDriver(), 60);
 		
 	public void ConsultarProduto(Produto produto, boolean isPesquisar) {
 		writeInput(poproductQuery_COPY.codeProductField(), produto.getCodigo());
-		writeInput(poproductQuery_COPY.input_productSearchDescription(), produto.getDescricao());
+		writeInput(poproductQuery_COPY.buscaProdutoPorDescricao(), produto.getDescricao());
 		writeInput(poproductQuery_COPY.input_productSearchUniqueId(),produto.getIdentificadorUnico());
 		if(isPesquisar){
 		clickElement(poproductQuery_COPY.button_productSearch());
@@ -47,6 +46,9 @@ public class ManterVenda extends BasePage {
 		Produto pA = Produto.PesquisarAtivo();
 		
 		RealizarVenda(p, true);
+	}
+	public void FinalizarEmDinheiro() {
+		clickElement(pageCart.pagamentoDinheiro());
 	}
 
 

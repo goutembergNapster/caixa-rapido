@@ -19,7 +19,7 @@ public class TimClientConfig implements ClientConfig {
 	}
 
 	public String getDescriptionProductSaleWithCash() {
-		return "Celular";
+		return "Iphone";
 	}
 
 	public int getTotalItensCart_SaleWithCash() {

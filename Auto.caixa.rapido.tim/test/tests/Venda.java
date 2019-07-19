@@ -5,15 +5,19 @@ import org.junit.Test;
 import driverHelper.*;
 import configs.*;
 import driverHelper.BasePage;
+import actions.ManterProduto;
 import actions.ManterVenda;
 
-public class Venda extends BasePage {
-	private ClientConfig clientConfig = ClientConfigFactory.getClientConfig(DriverFactory.clientName);
-	private ManterVenda actManterVenda = new ManterVenda(); 
+public class Venda extends BaseTest {
+	
+	private ManterProduto manterProduto = new ManterProduto(); 
+	private ManterVenda manterVenda = new ManterVenda();
 	
 	@Test
-	public void consultarProduto() {
+	public void VendaDinheiro() {
 		
-		
-}
+		manterProduto.ConsultarItemDescricao();
+		manterProduto.AdicionarProdutoAoCarrinhoSemCPF();
+		manterVenda.FinalizarEmDinheiro();
+		}
 }

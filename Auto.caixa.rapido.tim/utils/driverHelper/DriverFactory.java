@@ -49,6 +49,7 @@ public class DriverFactory {
 	}
 
 	private static  void createDriver() {
+		
 		DesiredCapabilities capabilities = new DesiredCapabilities();
 		capabilities.setCapability("platformName", "Android");
 		capabilities.setCapability("deviceName", "3300195820c44503");
